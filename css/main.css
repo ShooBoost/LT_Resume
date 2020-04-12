@@ -124,6 +124,10 @@ img {
   margin-bottom: 24px;
 }
 
+.content .card {
+  font-family: 'Roboto', 'PingFang TC';
+}
+
 .content .card .card-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,6 +233,7 @@ img {
 .content .board {
   background-color: #415165;
   padding: 24px 102px 0 102px;
+  font-family: 'Roboto', 'PingFang TC';
 }
 
 .content .board h3, .content .board h5, .content .board p {
@@ -280,7 +285,6 @@ img {
 .content .board .board-body .board-body-text p {
   font-size: 24px;
   line-height: 32px;
-  font-family: 'Roboto';
   font-weight: 100;
 }
 
@@ -300,6 +304,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 24px;
+  font-family: 'Roboto', 'PingFang TC';
 }
 
 .footer .footer-title {

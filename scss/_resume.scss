@@ -61,6 +61,7 @@ img {
         margin-bottom: 48px;
     };
     .card {
+        font-family: 'Roboto', 'PingFang TC';
         .card-title {
             display: flex;
             align-items: center;
@@ -146,6 +147,7 @@ img {
     .board {
         background-color: $color-blue;
         padding: 24px 102px 0 102px;
+        font-family: 'Roboto', 'PingFang TC';
 
         h3, h5, p {
             color: $color-white;
@@ -181,7 +183,6 @@ img {
                 p {
                     font-size: 24px;
                     line-height: 32px;
-                    font-family: 'Roboto';
                     font-weight: 100;
                 };
             };
@@ -197,6 +198,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-top: 24px;
+    font-family: 'Roboto', 'PingFang TC';
     .footer-title {
         display: flex;
         align-items: center;

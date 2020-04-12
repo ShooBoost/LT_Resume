@@ -3,7 +3,7 @@
     font-family: 'Roboto', 'PingFang TC';
 };
 
-html {
+html, body {
     width: 1920px;
 };
 
@@ -42,7 +42,7 @@ img {
 .tablecloth {
     position: absolute;
     top: 1356px;
-    width: 100%;
+    width: 1920px;
     height: 360px;
     background-color: $color-light-blue;
     z-index: -10;

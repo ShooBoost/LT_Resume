@@ -57,7 +57,7 @@ table {
   font-family: 'Roboto', 'PingFang TC';
 }
 
-html {
+html, body {
   width: 1920px;
 }
 
@@ -101,7 +101,7 @@ img {
 .tablecloth {
   position: absolute;
   top: 1356px;
-  width: 100%;
+  width: 1920px;
   height: 360px;
   background-color: #96A9C4;
   z-index: -10;

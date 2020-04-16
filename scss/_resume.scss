@@ -1,6 +1,6 @@
 * {
     color: $color-black;
-    font-family: 'Roboto', 'PingFang TC';
+    font-family: 'Roboto', 'PingFang TC', 'sans-serif';
 };
 
 html, body {
@@ -8,8 +8,8 @@ html, body {
 };
 
 .container {
-    padding-left: 360px;
-    padding-right: 360px;
+    width: 1200px;
+    margin: 0 auto;
 };
 
 img {
@@ -49,144 +49,155 @@ img {
 };
 .content {
     padding-top: 48px;
-    .name {
-        h1 {
-            font-family: 'Andale Mono';
-            display: inline-block;
-            font-size: 80px;
-            line-height: 90px;
-            margin-bottom: 24px;
-        };
-        border-bottom: 2px solid $color-black;
-        margin-bottom: 48px;
+};
+
+.name {
+    h1 {
+        font-family: 'Andale Mono';
+        font-size: 80px;
+        line-height: 90px;
+        margin-bottom: 24px;
     };
-    .card {
-        font-family: 'Roboto', 'PingFang TC';
-        .card-title {
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid $color-black;
-            padding-bottom: 8px;
+    border-bottom: 2px solid $color-black;
+    margin-bottom: 48px;
+};
 
-            .card-title-ch {
-                font-weight: 500;
-                font-size: 32px;
-                line-height: 45px;
-            };
-            .card-title-en {
-                font-size: 24px;
-                line-height: 32px;
-                font-family: 'Roboto';
-                color: $color-red;
-                margin-left: 16px;
-            };
-        };
-        .card-body {
-            display: flex;
-            .card-body-dec {
-                // 用 padding 一次擠好
-                padding: 8px 16px 0 16px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .dot {
-                    border-radius: 100%;
-                    height: 16px;
-                    width: 16px;
-                    background-color: $color-light-blue;
-                };
-                .line-vertical {
-                    width: 1px;
-                    height: 49px;
-                    background-color: $color-light-blue;
-                };
-                .line-vertical-l {
-                    height: 100%;
-                };
-            };
-            .card-body-dec-pt-9 {
-                padding: 9px 16px 0 16px;
-            };
-            .card-body-dec-pt-0 {
-                padding: 0px 24px 0 24px;
-            };
-            .card-body-text {
-                p {
-                    font-size: 24px;
-                    // 字體的粗細真 D 麻煩
-                    font-weight: 300;
-                };
-                // 我用 XD 上該物件 block 的 height 當作 line-height
-                // 沒有直接用 XD 上顯示的 line-height
-                .lh-33 {
-                    line-height: 33px;
-                };
-                .lh-35 {
-                    line-height: 35px;
-                };
-                img {
-                    margin-bottom: 8.15px;
-                };
-                .fw-500 {
-                    font-weight: 500;
-                }
+// style of card
+.card {
+    font-family: 'Roboto', 'PingFang TC';
 
-                .card-body-text-p-m {
-                    width: 642px;
-                    font-size: 20px;
-                    line-height: 31px;
-                };
-
-                .card-body-text-p-s {
-                    font-size: 20px;
-                    line-height: 28px;
-                };
-            };
-        };
+    // style of card title
+    .card-title {
+        border-bottom: 1px solid $color-black;
+        padding-bottom: 8px;
     };
-    .board {
-        background-color: $color-blue;
-        padding: 24px 102px 0 102px;
-        font-family: 'Roboto', 'PingFang TC';
+    .card-title-ch {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+    };
+    .card-title-en {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: 'Roboto';
+        color: $color-red;
+        margin-left: 16px;
+    };
 
-        h3, h5, p {
-            color: $color-white;
-        };
+    // style of card body
+    .card-body {
+        display: flex;
+    };
 
-        .board-title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 8px;
-            border-bottom: 1px solid $color-white;
-            margin-bottom: 40px;
+    // style of card-body-dec
+    .card-body-dec {
+        // 用 padding 一次擠好
+        padding: 8px 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    };
+    .dot {
+        border-radius: 100%;
+        height: 16px;
+        width: 16px;
+        background-color: $color-light-blue;
+    };
+    .line-vertical {
+        width: 1px;
+        height: 49px;
+        background-color: $color-light-blue;
+    };
+    .line-vertical-l {
+        height: 100%;
+    };
+    .card-body-dec-pt-9 {
+        padding: 9px 16px 0 16px;
+    };
+    .card-body-dec-pt-0 {
+        padding: 0px 24px 0 24px;
+    };
 
-            .board-title-ch {
-                font-size: 32px;
-                line-height: 45px;
-            };
-            .board-title-en {
-                font-size: 24px;
-                line-height: 32px;
-                margin-left: 16px;
-                font-family: 'Roboto';
-            };
-        };
+    // style of card-body-text
+    li {
+        font-size: 24px;
+        // 字體的粗細真 D 麻煩
+        font-weight: 300;
+    };
+    // 我用 XD 上該物件 block 的 height 當作 line-height
+    // 沒有直接用 XD 上顯示的 line-height
+    .lh-33 {
+        line-height: 33px;
+    };
+    .lh-35 {
+        line-height: 35px;
+    };
+    img {
+        margin-bottom: 8.15px;
+    };
+    .fw-500 {
+        font-weight: 500;
+    }
 
-        .board-body {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 55.5px;
-            .board-body-text {
-                padding-left: 24px;
-                border-left: 1px solid $color-light-blue;
-                p {
-                    font-size: 24px;
-                    line-height: 32px;
-                    font-weight: 100;
-                };
-            };
-        };
+    .card-body-text-p-m {
+        width: 642px;
+        font-size: 20px;
+        line-height: 31px;
+    };
+
+    .card-body-text-p-s {
+        font-size: 20px;
+        line-height: 28px;
+    };
+};
+
+// style of board
+.board {
+    background-color: $color-blue;
+    padding: 24px 102px 0 102px;
+    font-family: 'Roboto', 'PingFang TC';
+
+    h3, span, li {
+        color: $color-white;
+    };
+
+    // style of board-title
+    .board-title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $color-white;
+        margin-bottom: 40px;
+    };
+    .board-title-ch {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        line-height: 45px;
+    };
+    .board-title-en {
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 16px;
+        font-family: 'Roboto';
+    };
+
+    // style of board-body
+    .board-body {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 55.5px;
+    };
+    .board-body-text {
+        padding-left: 24px;
+        border-left: 1px solid $color-light-blue;
+    };
+    li {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 100;
     };
 };
 
@@ -199,50 +210,42 @@ footer {
     align-items: center;
     padding-top: 24px;
     font-family: 'Roboto', 'PingFang TC';
-    .footer-title {
+    // style of footer-title
+    h3, span {
+        color: $color-white;
+        font-weight: 400;
+    };
+    h3 {
         display: flex;
         align-items: center;
-        h3, h5 {
-            color: $color-white;
-            font-weight: 300;
-        };
+        font-size: 32px;
+        line-height: 45px;
+    };
+    span {
+        font-size: 24px;
+        margin-left: 16px;
     };
     .footer-line {
         width: 100%;
         height: 1px;
         background-color: $color-white;
     };
+    // style of footer-body
     .footer-body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        p {
-            color: $color-white;
-            font-weight: 300;
-            margin-bottom: 16px;
-            font-size: 24px;
-            line-height: 33px;
-        };
-        .social-media {
-            display: flex;
-            width: 192px;
-            justify-content: space-between;
-            img {
-                display: block;
-            };
-        };
     };
-};
-
-.title-ch {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 45px;
-};
-.title-en {
-    font-size: 24px;
-    line-height: 32px;
-    font-family: 'Roboto';
-    color: $color-red;
-    margin-left: 16px;
+    li {
+        color: $color-white;
+        font-weight: 300;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 33px;
+    };
+    .social-media {
+        display: flex;
+        width: 192px;
+        justify-content: space-between;
+    };
 };

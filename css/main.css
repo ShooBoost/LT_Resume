@@ -54,7 +54,7 @@ table {
 
 * {
   color: #000000;
-  font-family: 'Roboto', 'PingFang TC';
+  font-family: 'Roboto', 'PingFang TC', 'sans-serif';
 }
 
 html, body {
@@ -62,8 +62,8 @@ html, body {
 }
 
 .container {
-  padding-left: 360px;
-  padding-right: 360px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 img {
@@ -111,41 +111,40 @@ img {
   padding-top: 48px;
 }
 
-.content .name {
+.name {
   border-bottom: 2px solid #000000;
   margin-bottom: 48px;
 }
 
-.content .name h1 {
+.name h1 {
   font-family: 'Andale Mono';
-  display: inline-block;
   font-size: 80px;
   line-height: 90px;
   margin-bottom: 24px;
 }
 
-.content .card {
+.card {
   font-family: 'Roboto', 'PingFang TC';
 }
 
-.content .card .card-title {
+.card .card-title {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
+}
+
+.card .card-title-ch {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 8px;
 }
 
-.content .card .card-title .card-title-ch {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 45px;
-}
-
-.content .card .card-title .card-title-en {
+.card .card-title-en {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Roboto';
@@ -153,13 +152,13 @@ img {
   margin-left: 16px;
 }
 
-.content .card .card-body {
+.card .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.content .card .card-body .card-body-dec {
+.card .card-body-dec {
   padding: 8px 16px 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,101 +172,104 @@ img {
           align-items: center;
 }
 
-.content .card .card-body .card-body-dec .dot {
+.card .dot {
   border-radius: 100%;
   height: 16px;
   width: 16px;
   background-color: #96A9C4;
 }
 
-.content .card .card-body .card-body-dec .line-vertical {
+.card .line-vertical {
   width: 1px;
   height: 49px;
   background-color: #96A9C4;
 }
 
-.content .card .card-body .card-body-dec .line-vertical-l {
+.card .line-vertical-l {
   height: 100%;
 }
 
-.content .card .card-body .card-body-dec-pt-9 {
+.card .card-body-dec-pt-9 {
   padding: 9px 16px 0 16px;
 }
 
-.content .card .card-body .card-body-dec-pt-0 {
+.card .card-body-dec-pt-0 {
   padding: 0px 24px 0 24px;
 }
 
-.content .card .card-body .card-body-text p {
+.card li {
   font-size: 24px;
   font-weight: 300;
 }
 
-.content .card .card-body .card-body-text .lh-33 {
+.card .lh-33 {
   line-height: 33px;
 }
 
-.content .card .card-body .card-body-text .lh-35 {
+.card .lh-35 {
   line-height: 35px;
 }
 
-.content .card .card-body .card-body-text img {
+.card img {
   margin-bottom: 8.15px;
 }
 
-.content .card .card-body .card-body-text .fw-500 {
+.card .fw-500 {
   font-weight: 500;
 }
 
-.content .card .card-body .card-body-text .card-body-text-p-m {
+.card .card-body-text-p-m {
   width: 642px;
   font-size: 20px;
   line-height: 31px;
 }
 
-.content .card .card-body .card-body-text .card-body-text-p-s {
+.card .card-body-text-p-s {
   font-size: 20px;
   line-height: 28px;
 }
 
-.content .board {
+.board {
   background-color: #415165;
   padding: 24px 102px 0 102px;
   font-family: 'Roboto', 'PingFang TC';
 }
 
-.content .board h3, .content .board h5, .content .board p {
+.board h3, .board span, .board li {
   color: #FFFFFF;
 }
 
-.content .board .board-title {
+.board .board-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-bottom: 8px;
   border-bottom: 1px solid #FFFFFF;
   margin-bottom: 40px;
 }
 
-.content .board .board-title .board-title-ch {
+.board .board-title-ch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 32px;
   line-height: 45px;
 }
 
-.content .board .board-title .board-title-en {
+.board .board-title-en {
   font-size: 24px;
   line-height: 32px;
   margin-left: 16px;
   font-family: 'Roboto';
 }
 
-.content .board .board-body {
+.board .board-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,12 +279,12 @@ img {
   padding-bottom: 55.5px;
 }
 
-.content .board .board-body .board-body-text {
+.board .board-body-text {
   padding-left: 24px;
   border-left: 1px solid #96A9C4;
 }
 
-.content .board .board-body .board-body-text p {
+.board li {
   font-size: 24px;
   line-height: 32px;
   font-weight: 100;
@@ -307,18 +309,25 @@ footer {
   font-family: 'Roboto', 'PingFang TC';
 }
 
-.footer .footer-title {
+.footer h3, .footer span {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.footer h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 32px;
+  line-height: 45px;
 }
 
-.footer .footer-title h3, .footer .footer-title h5 {
-  color: #FFFFFF;
-  font-weight: 300;
+.footer span {
+  font-size: 24px;
+  margin-left: 16px;
 }
 
 .footer .footer-line {
@@ -340,7 +349,7 @@ footer {
           align-items: center;
 }
 
-.footer .footer-body p {
+.footer li {
   color: #FFFFFF;
   font-weight: 300;
   margin-bottom: 16px;
@@ -348,7 +357,7 @@ footer {
   line-height: 33px;
 }
 
-.footer .footer-body .social-media {
+.footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,23 +365,5 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.footer .footer-body .social-media img {
-  display: block;
-}
-
-.title-ch {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 45px;
-}
-
-.title-en {
-  font-size: 24px;
-  line-height: 32px;
-  font-family: 'Roboto';
-  color: #A00404;
-  margin-left: 16px;
 }
 /*# sourceMappingURL=main.css.map */
